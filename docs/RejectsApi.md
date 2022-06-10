@@ -1,4 +1,4 @@
-# \RejectsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -7,7 +7,6 @@ Method | HTTP request | Description
 [**PostRejectsAdd**](RejectsApi.md#PostRejectsAdd) | **Post** /rejects/add | Add email to denylist
 [**PostRejectsDelete**](RejectsApi.md#PostRejectsDelete) | **Post** /rejects/delete | Delete email from denylist
 [**PostRejectsList**](RejectsApi.md#PostRejectsList) | **Post** /rejects/list | List denylisted emails
-
 
 # **PostRejectsAdd**
 > InlineResponse20040 PostRejectsAdd(ctx, body)
@@ -20,7 +19,7 @@ Adds an email to your email rejection denylist. Addresses that you add manually 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body46**](Body46.md)|  | 
+  **body** | [**RejectsAddBody**](RejectsAddBody.md)|  | 
 
 ### Return type
 
@@ -48,7 +47,7 @@ Deletes an email rejection. There is no limit to how many rejections you can rem
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body48**](Body48.md)|  | 
+  **body** | [**RejectsDeleteBody**](RejectsDeleteBody.md)|  | 
 
 ### Return type
 
@@ -76,7 +75,7 @@ Retrieves your email rejection denylist. You can provide an email address to lim
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body47**](Body47.md)|  | 
+  **body** | [**RejectsListBody**](RejectsListBody.md)|  | 
 
 ### Return type
 

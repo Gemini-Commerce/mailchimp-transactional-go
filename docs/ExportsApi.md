@@ -1,4 +1,4 @@
-# \ExportsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -11,7 +11,6 @@ Method | HTTP request | Description
 [**PostExportsRejects**](ExportsApi.md#PostExportsRejects) | **Post** /exports/rejects | Export denylist
 [**PostExportsWhitelist**](ExportsApi.md#PostExportsWhitelist) | **Post** /exports/whitelist | Export Allowlist
 
-
 # **PostExportsActivity**
 > InlineResponse2007 PostExportsActivity(ctx, body)
 Export activity history
@@ -23,7 +22,7 @@ Begins an export of your activity history. The activity will be exported to a zi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body8**](Body8.md)|  | 
+  **body** | [**ExportsActivityBody**](ExportsActivityBody.md)|  | 
 
 ### Return type
 
@@ -51,7 +50,7 @@ Begins an export of your rejection allowlist. The allowlist will be exported to 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body7**](Body7.md)|  | 
+  **body** | [**ExportsAllowlistBody**](ExportsAllowlistBody.md)|  | 
 
 ### Return type
 
@@ -79,7 +78,7 @@ Returns information about an export job. If the export job's state is 'complete'
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body3**](Body3.md)|  | 
+  **body** | [**ExportsInfoBody**](ExportsInfoBody.md)|  | 
 
 ### Return type
 
@@ -107,7 +106,7 @@ Returns a list of your exports.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body4**](Body4.md)|  | 
+  **body** | [**ExportsListBody**](ExportsListBody.md)|  | 
 
 ### Return type
 
@@ -135,7 +134,7 @@ Begins an export of your rejection denylist. The denylist will be exported to a 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body5**](Body5.md)|  | 
+  **body** | [**ExportsRejectsBody**](ExportsRejectsBody.md)|  | 
 
 ### Return type
 
@@ -163,7 +162,7 @@ Begins an export of your rejection allowlist. The allowlist will be exported to 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body6**](Body6.md)|  | 
+  **body** | [**ExportsWhitelistBody**](ExportsWhitelistBody.md)|  | 
 
 ### Return type
 

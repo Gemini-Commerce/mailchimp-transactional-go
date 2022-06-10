@@ -1,4 +1,4 @@
-# \MessagesApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -16,7 +16,6 @@ Method | HTTP request | Description
 [**PostMessagesSendRaw**](MessagesApi.md#PostMessagesSendRaw) | **Post** /messages/send-raw | Send mime document
 [**PostMessagesSendTemplate**](MessagesApi.md#PostMessagesSendTemplate) | **Post** /messages/send-template | Send using message template
 
-
 # **PostMessagesCancelScheduled**
 > []InlineResponse20035 PostMessagesCancelScheduled(ctx, body)
 Cancel scheduled email
@@ -28,7 +27,7 @@ Cancels a scheduled email.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body40**](Body40.md)|  | 
+  **body** | [**MessagesCancelscheduledBody**](MessagesCancelscheduledBody.md)|  | 
 
 ### Return type
 
@@ -56,7 +55,7 @@ Get the full content of a recently sent message.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body36**](Body36.md)|  | 
+  **body** | [**MessagesContentBody**](MessagesContentBody.md)|  | 
 
 ### Return type
 
@@ -84,7 +83,7 @@ Get the information for a single recently sent message.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body35**](Body35.md)|  | 
+  **body** | [**MessagesInfoBody**](MessagesInfoBody.md)|  | 
 
 ### Return type
 
@@ -112,7 +111,7 @@ Queries your scheduled emails.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body39**](Body39.md)|  | 
+  **body** | [**MessagesListscheduledBody**](MessagesListscheduledBody.md)|  | 
 
 ### Return type
 
@@ -140,7 +139,7 @@ Parse the full MIME document for an email message, returning the content of the 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body37**](Body37.md)|  | 
+  **body** | [**MessagesParseBody**](MessagesParseBody.md)|  | 
 
 ### Return type
 
@@ -168,7 +167,7 @@ Reschedules a scheduled email.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body41**](Body41.md)|  | 
+  **body** | [**MessagesRescheduleBody**](MessagesRescheduleBody.md)|  | 
 
 ### Return type
 
@@ -196,7 +195,7 @@ Search recently sent messages and optionally narrow by date range, tags, senders
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body33**](Body33.md)|  | 
+  **body** | [**MessagesSearchBody**](MessagesSearchBody.md)|  | 
 
 ### Return type
 
@@ -224,7 +223,7 @@ Search the content of recently sent messages and return the aggregated hourly st
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body34**](Body34.md)|  | 
+  **body** | [**MessagesSearchtimeseriesBody**](MessagesSearchtimeseriesBody.md)|  | 
 
 ### Return type
 
@@ -252,7 +251,7 @@ Send a new transactional message through the Transactional API.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body31**](Body31.md)|  | 
+  **body** | [**MessagesSendBody**](MessagesSendBody.md)|  | 
 
 ### Return type
 
@@ -280,7 +279,7 @@ Take a raw MIME document for a message, and send it exactly as if it were sent t
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body38**](Body38.md)|  | 
+  **body** | [**MessagesSendrawBody**](MessagesSendrawBody.md)|  | 
 
 ### Return type
 
@@ -308,7 +307,7 @@ Send a new transactional message through the Transactional API using a template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body32**](Body32.md)|  | 
+  **body** | [**MessagesSendtemplateBody**](MessagesSendtemplateBody.md)|  | 
 
 ### Return type
 

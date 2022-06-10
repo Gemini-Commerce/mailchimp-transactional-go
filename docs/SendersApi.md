@@ -1,4 +1,4 @@
-# \SendersApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -12,7 +12,6 @@ Method | HTTP request | Description
 [**PostSendersTimeSeries**](SendersApi.md#PostSendersTimeSeries) | **Post** /senders/time-series | View sender history
 [**PostSendersVerifyDomain**](SendersApi.md#PostSendersVerifyDomain) | **Post** /senders/verify-domain | Verify domain
 
-
 # **PostSendersAddDomain**
 > InlineResponse20045 PostSendersAddDomain(ctx, body)
 Add sender domain
@@ -24,7 +23,7 @@ Adds a sender domain to your account. Sender domains are added automatically as 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body51**](Body51.md)|  | 
+  **body** | [**SendersAdddomainBody**](SendersAdddomainBody.md)|  | 
 
 ### Return type
 
@@ -52,7 +51,7 @@ Checks the SPF and DKIM settings for a domain, as well the domain verification. 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body52**](Body52.md)|  | 
+  **body** | [**SendersCheckdomainBody**](SendersCheckdomainBody.md)|  | 
 
 ### Return type
 
@@ -80,7 +79,7 @@ Returns the sender domains that have been added to this account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body50**](Body50.md)|  | 
+  **body** | [**SendersDomainsBody**](SendersDomainsBody.md)|  | 
 
 ### Return type
 
@@ -108,7 +107,7 @@ Return more detailed information about a single sender, including aggregates of 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body54**](Body54.md)|  | 
+  **body** | [**SendersInfoBody**](SendersInfoBody.md)|  | 
 
 ### Return type
 
@@ -136,7 +135,7 @@ Return the senders that have tried to use this account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body49**](Body49.md)|  | 
+  **body** | [**SendersListBody**](SendersListBody.md)|  | 
 
 ### Return type
 
@@ -164,7 +163,7 @@ Return the recent history (hourly stats for the last 30 days) for a sender.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body55**](Body55.md)|  | 
+  **body** | [**SendersTimeseriesBody**](SendersTimeseriesBody.md)|  | 
 
 ### Return type
 
@@ -192,7 +191,7 @@ Sends a verification email in order to verify ownership of a domain. Domain veri
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body53**](Body53.md)|  | 
+  **body** | [**SendersVerifydomainBody**](SendersVerifydomainBody.md)|  | 
 
 ### Return type
 

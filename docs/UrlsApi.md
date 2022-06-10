@@ -1,4 +1,4 @@
-# \UrlsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -11,7 +11,6 @@ Method | HTTP request | Description
 [**PostUrlsTimeSeries**](UrlsApi.md#PostUrlsTimeSeries) | **Post** /urls/time-series | Get url history
 [**PostUrlsTrackingDomains**](UrlsApi.md#PostUrlsTrackingDomains) | **Post** /urls/tracking-domains | List tracking domains
 
-
 # **PostUrlsAddTrackingDomain**
 > InlineResponse20071 PostUrlsAddTrackingDomain(ctx, body)
 Add tracking domains
@@ -23,7 +22,7 @@ Add a tracking domain to your account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body80**](Body80.md)|  | 
+  **body** | [**UrlsAddtrackingdomainBody**](UrlsAddtrackingdomainBody.md)|  | 
 
 ### Return type
 
@@ -51,7 +50,7 @@ Checks the CNAME settings for a tracking domain. The domain must have been added
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body81**](Body81.md)|  | 
+  **body** | [**UrlsChecktrackingdomainBody**](UrlsChecktrackingdomainBody.md)|  | 
 
 ### Return type
 
@@ -79,7 +78,7 @@ Get the 100 most clicked URLs.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body76**](Body76.md)|  | 
+  **body** | [**UrlsListBody**](UrlsListBody.md)|  | 
 
 ### Return type
 
@@ -107,7 +106,7 @@ Return the 100 most clicked URLs that match the search query given.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body77**](Body77.md)|  | 
+  **body** | [**UrlsSearchBody**](UrlsSearchBody.md)|  | 
 
 ### Return type
 
@@ -135,7 +134,7 @@ Return the recent history (hourly stats for the last 30 days) for a URL
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body78**](Body78.md)|  | 
+  **body** | [**UrlsTimeseriesBody**](UrlsTimeseriesBody.md)|  | 
 
 ### Return type
 
@@ -163,7 +162,7 @@ Get the list of tracking domains set up for this account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body79**](Body79.md)|  | 
+  **body** | [**UrlsTrackingdomainsBody**](UrlsTrackingdomainsBody.md)|  | 
 
 ### Return type
 

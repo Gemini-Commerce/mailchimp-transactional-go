@@ -1,4 +1,4 @@
-# \UsersApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**PostUsersPing**](UsersApi.md#PostUsersPing) | **Post** /users/ping | Ping
 [**PostUsersPing2**](UsersApi.md#PostUsersPing2) | **Post** /users/ping2 | Ping 2
 [**PostUsersSenders**](UsersApi.md#PostUsersSenders) | **Post** /users/senders | List account senders
-
 
 # **PostUsersInfo**
 > InlineResponse20072 PostUsersInfo(ctx, body)
@@ -21,7 +20,7 @@ Return the information about the API-connected user.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body82**](Body82.md)|  | 
+  **body** | [**UsersInfoBody**](UsersInfoBody.md)|  | 
 
 ### Return type
 
@@ -49,7 +48,7 @@ Validate an API key and respond to a ping.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body83**](Body83.md)|  | 
+  **body** | [**UsersPingBody**](UsersPingBody.md)|  | 
 
 ### Return type
 
@@ -77,7 +76,7 @@ Validate an API key and respond to a ping (JSON parser version).
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body84**](Body84.md)|  | 
+  **body** | [**UsersPing2Body**](UsersPing2Body.md)|  | 
 
 ### Return type
 
@@ -105,7 +104,7 @@ Return the senders that have tried to use this account, both verified and unveri
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body85**](Body85.md)|  | 
+  **body** | [**UsersSendersBody**](UsersSendersBody.md)|  | 
 
 ### Return type
 

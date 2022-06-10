@@ -1,4 +1,4 @@
-# \InboundApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -14,7 +14,6 @@ Method | HTTP request | Description
 [**PostInboundSendRaw**](InboundApi.md#PostInboundSendRaw) | **Post** /inbound/send-raw | Send mime document
 [**PostInboundUpdateRoute**](InboundApi.md#PostInboundUpdateRoute) | **Post** /inbound/update-route | Update mailbox route
 
-
 # **PostInboundAddDomain**
 > InlineResponse2009 PostInboundAddDomain(ctx, body)
 Add inbound domain
@@ -26,7 +25,7 @@ Add an inbound domain to your account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body10**](Body10.md)|  | 
+  **body** | [**InboundAdddomainBody**](InboundAdddomainBody.md)|  | 
 
 ### Return type
 
@@ -54,7 +53,7 @@ Add a new mailbox route to an inbound domain.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body14**](Body14.md)|  | 
+  **body** | [**InboundAddrouteBody**](InboundAddrouteBody.md)|  | 
 
 ### Return type
 
@@ -82,7 +81,7 @@ Check the MX settings for an inbound domain. The domain must have already been a
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body11**](Body11.md)|  | 
+  **body** | [**InboundCheckdomainBody**](InboundCheckdomainBody.md)|  | 
 
 ### Return type
 
@@ -110,7 +109,7 @@ Delete an inbound domain from the account. All mail will stop routing for this d
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body12**](Body12.md)|  | 
+  **body** | [**InboundDeletedomainBody**](InboundDeletedomainBody.md)|  | 
 
 ### Return type
 
@@ -138,7 +137,7 @@ Delete an existing inbound mailbox route.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body16**](Body16.md)|  | 
+  **body** | [**InboundDeleterouteBody**](InboundDeleterouteBody.md)|  | 
 
 ### Return type
 
@@ -166,7 +165,7 @@ List the domains that have been configured for inbound delivery.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body9**](Body9.md)|  | 
+  **body** | [**InboundDomainsBody**](InboundDomainsBody.md)|  | 
 
 ### Return type
 
@@ -194,7 +193,7 @@ List the mailbox routes defined for an inbound domain.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body13**](Body13.md)|  | 
+  **body** | [**InboundRoutesBody**](InboundRoutesBody.md)|  | 
 
 ### Return type
 
@@ -222,7 +221,7 @@ Take a raw MIME document destined for a domain with inbound domains set up, and 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body17**](Body17.md)|  | 
+  **body** | [**InboundSendrawBody**](InboundSendrawBody.md)|  | 
 
 ### Return type
 
@@ -250,7 +249,7 @@ Update the pattern or webhook of an existing inbound mailbox route. If null is p
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body15**](Body15.md)|  | 
+  **body** | [**InboundUpdaterouteBody**](InboundUpdaterouteBody.md)|  | 
 
 ### Return type
 

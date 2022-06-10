@@ -1,4 +1,4 @@
-# \IpsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -18,7 +18,6 @@ Method | HTTP request | Description
 [**PostIpsSetPool**](IpsApi.md#PostIpsSetPool) | **Post** /ips/set-pool | Move ip to different pool
 [**PostIpsStartWarmup**](IpsApi.md#PostIpsStartWarmup) | **Post** /ips/start-warmup | Start ip warmup
 
-
 # **PostIpsCancelWarmup**
 > InlineResponse20020 PostIpsCancelWarmup(ctx, body)
 Cancel ip warmup
@@ -30,7 +29,7 @@ Cancels the warmup process for a dedicated IP.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body22**](Body22.md)|  | 
+  **body** | [**IpsCancelwarmupBody**](IpsCancelwarmupBody.md)|  | 
 
 ### Return type
 
@@ -58,7 +57,7 @@ Tests whether a domain name is valid for use as the custom reverse DNS for a ded
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body29**](Body29.md)|  | 
+  **body** | [**IpsCheckcustomdnsBody**](IpsCheckcustomdnsBody.md)|  | 
 
 ### Return type
 
@@ -86,7 +85,7 @@ Creates a pool and returns it. If a pool already exists with this name, no actio
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body27**](Body27.md)|  | 
+  **body** | [**IpsCreatepoolBody**](IpsCreatepoolBody.md)|  | 
 
 ### Return type
 
@@ -114,7 +113,7 @@ Deletes a dedicated IP. This is permanent and cannot be undone.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body24**](Body24.md)|  | 
+  **body** | [**IpsDeleteBody**](IpsDeleteBody.md)|  | 
 
 ### Return type
 
@@ -142,7 +141,7 @@ Deletes a pool. A pool must be empty before you can delete it, and you cannot de
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body28**](Body28.md)|  | 
+  **body** | [**IpsDeletepoolBody**](IpsDeletepoolBody.md)|  | 
 
 ### Return type
 
@@ -170,7 +169,7 @@ Retrieves information about a single dedicated IP.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body19**](Body19.md)|  | 
+  **body** | [**IpsInfoBody**](IpsInfoBody.md)|  | 
 
 ### Return type
 
@@ -198,7 +197,7 @@ Lists your dedicated IPs.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body18**](Body18.md)|  | 
+  **body** | [**IpsListBody**](IpsListBody.md)|  | 
 
 ### Return type
 
@@ -226,7 +225,7 @@ Lists your dedicated IP pools.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body25**](Body25.md)|  | 
+  **body** | [**IpsListpoolsBody**](IpsListpoolsBody.md)|  | 
 
 ### Return type
 
@@ -254,7 +253,7 @@ Describes a single dedicated IP pool.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body26**](Body26.md)|  | 
+  **body** | [**IpsPoolinfoBody**](IpsPoolinfoBody.md)|  | 
 
 ### Return type
 
@@ -282,7 +281,7 @@ Requests an additional dedicated IP for your account. Accounts may have one outs
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body20**](Body20.md)|  | 
+  **body** | [**IpsProvisionBody**](IpsProvisionBody.md)|  | 
 
 ### Return type
 
@@ -310,7 +309,7 @@ Configures the custom DNS name for a dedicated IP.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body30**](Body30.md)|  | 
+  **body** | [**IpsSetcustomdnsBody**](IpsSetcustomdnsBody.md)|  | 
 
 ### Return type
 
@@ -338,7 +337,7 @@ Moves a dedicated IP to a different pool.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body23**](Body23.md)|  | 
+  **body** | [**IpsSetpoolBody**](IpsSetpoolBody.md)|  | 
 
 ### Return type
 
@@ -366,7 +365,7 @@ Begins the warmup process for a dedicated IP. During the warmup process, the Tra
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body21**](Body21.md)|  | 
+  **body** | [**IpsStartwarmupBody**](IpsStartwarmupBody.md)|  | 
 
 ### Return type
 

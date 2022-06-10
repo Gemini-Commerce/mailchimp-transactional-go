@@ -1,4 +1,4 @@
-# \SubaccountsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -12,7 +12,6 @@ Method | HTTP request | Description
 [**PostSubaccountsResume**](SubaccountsApi.md#PostSubaccountsResume) | **Post** /subaccounts/resume | Resume subaccount
 [**PostSubaccountsUpdate**](SubaccountsApi.md#PostSubaccountsUpdate) | **Post** /subaccounts/update | Update subaccount
 
-
 # **PostSubaccountsAdd**
 > InlineResponse20051 PostSubaccountsAdd(ctx, body)
 Add subaccount
@@ -24,7 +23,7 @@ Add a new subaccount.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body57**](Body57.md)|  | 
+  **body** | [**SubaccountsAddBody**](SubaccountsAddBody.md)|  | 
 
 ### Return type
 
@@ -52,7 +51,7 @@ Delete an existing subaccount. Any email related to the subaccount will be saved
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body60**](Body60.md)|  | 
+  **body** | [**SubaccountsDeleteBody**](SubaccountsDeleteBody.md)|  | 
 
 ### Return type
 
@@ -80,7 +79,7 @@ Given the ID of an existing subaccount, return the data about it.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body58**](Body58.md)|  | 
+  **body** | [**SubaccountsInfoBody**](SubaccountsInfoBody.md)|  | 
 
 ### Return type
 
@@ -108,7 +107,7 @@ Get the list of subaccounts defined for the account, optionally filtered by a pr
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body56**](Body56.md)|  | 
+  **body** | [**SubaccountsListBody**](SubaccountsListBody.md)|  | 
 
 ### Return type
 
@@ -136,7 +135,7 @@ Pause a subaccount's sending. Any future emails delivered to this subaccount wil
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body61**](Body61.md)|  | 
+  **body** | [**SubaccountsPauseBody**](SubaccountsPauseBody.md)|  | 
 
 ### Return type
 
@@ -164,7 +163,7 @@ Resume a paused subaccount's sending.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body62**](Body62.md)|  | 
+  **body** | [**SubaccountsResumeBody**](SubaccountsResumeBody.md)|  | 
 
 ### Return type
 
@@ -192,7 +191,7 @@ Update an existing subaccount.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body59**](Body59.md)|  | 
+  **body** | [**SubaccountsUpdateBody**](SubaccountsUpdateBody.md)|  | 
 
 ### Return type
 

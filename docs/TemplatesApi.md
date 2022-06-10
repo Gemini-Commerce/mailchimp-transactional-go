@@ -1,4 +1,4 @@
-# \TemplatesApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -13,7 +13,6 @@ Method | HTTP request | Description
 [**PostTemplatesTimeSeries**](TemplatesApi.md#PostTemplatesTimeSeries) | **Post** /templates/time-series | Get template history
 [**PostTemplatesUpdate**](TemplatesApi.md#PostTemplatesUpdate) | **Post** /templates/update | Update template
 
-
 # **PostTemplatesAdd**
 > InlineResponse20060 PostTemplatesAdd(ctx, body)
 Add template
@@ -25,7 +24,7 @@ Add a new template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body68**](Body68.md)|  | 
+  **body** | [**TemplatesAddBody**](TemplatesAddBody.md)|  | 
 
 ### Return type
 
@@ -53,7 +52,7 @@ Delete a template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body72**](Body72.md)|  | 
+  **body** | [**TemplatesDeleteBody**](TemplatesDeleteBody.md)|  | 
 
 ### Return type
 
@@ -81,7 +80,7 @@ Get the information for an existing template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body69**](Body69.md)|  | 
+  **body** | [**TemplatesInfoBody**](TemplatesInfoBody.md)|  | 
 
 ### Return type
 
@@ -109,7 +108,7 @@ Return a list of all the templates available to this user.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body73**](Body73.md)|  | 
+  **body** | [**TemplatesListBody**](TemplatesListBody.md)|  | 
 
 ### Return type
 
@@ -137,7 +136,7 @@ Publish the content for the template. Any new messages sent using this template 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body71**](Body71.md)|  | 
+  **body** | [**TemplatesPublishBody**](TemplatesPublishBody.md)|  | 
 
 ### Return type
 
@@ -165,7 +164,7 @@ Inject content and optionally merge fields into a template, returning the HTML t
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body75**](Body75.md)|  | 
+  **body** | [**TemplatesRenderBody**](TemplatesRenderBody.md)|  | 
 
 ### Return type
 
@@ -193,7 +192,7 @@ Return the recent history (hourly stats for the last 30 days) for a template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body74**](Body74.md)|  | 
+  **body** | [**TemplatesTimeseriesBody**](TemplatesTimeseriesBody.md)|  | 
 
 ### Return type
 
@@ -221,7 +220,7 @@ Update the code for an existing template. If null is provided for any fields, th
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body70**](Body70.md)|  | 
+  **body** | [**TemplatesUpdateBody**](TemplatesUpdateBody.md)|  | 
 
 ### Return type
 

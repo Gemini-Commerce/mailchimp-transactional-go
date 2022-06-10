@@ -1,4 +1,4 @@
-# \WebhooksApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**PostWebhooksInfo**](WebhooksApi.md#PostWebhooksInfo) | **Post** /webhooks/info | Get webhook info
 [**PostWebhooksList**](WebhooksApi.md#PostWebhooksList) | **Post** /webhooks/list | List webhooks
 [**PostWebhooksUpdate**](WebhooksApi.md#PostWebhooksUpdate) | **Post** /webhooks/update | Update webhook
-
 
 # **PostWebhooksAdd**
 > InlineResponse20075 PostWebhooksAdd(ctx, body)
@@ -22,7 +21,7 @@ Add a new webhook.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body87**](Body87.md)|  | 
+  **body** | [**WebhooksAddBody**](WebhooksAddBody.md)|  | 
 
 ### Return type
 
@@ -50,7 +49,7 @@ Delete an existing webhook.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body90**](Body90.md)|  | 
+  **body** | [**WebhooksDeleteBody**](WebhooksDeleteBody.md)|  | 
 
 ### Return type
 
@@ -78,7 +77,7 @@ Given the ID of an existing webhook, return the data about it.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body88**](Body88.md)|  | 
+  **body** | [**WebhooksInfoBody**](WebhooksInfoBody.md)|  | 
 
 ### Return type
 
@@ -106,7 +105,7 @@ Get the list of all webhooks defined on the account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body86**](Body86.md)|  | 
+  **body** | [**WebhooksListBody**](WebhooksListBody.md)|  | 
 
 ### Return type
 
@@ -134,7 +133,7 @@ Update an existing webhook.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body89**](Body89.md)|  | 
+  **body** | [**WebhooksUpdateBody**](WebhooksUpdateBody.md)|  | 
 
 ### Return type
 

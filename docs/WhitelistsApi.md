@@ -1,4 +1,4 @@
-# \WhitelistsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -7,7 +7,6 @@ Method | HTTP request | Description
 [**PostWhitelistsAdd**](WhitelistsApi.md#PostWhitelistsAdd) | **Post** /whitelists/add | Add email to allowlist
 [**PostWhitelistsDelete**](WhitelistsApi.md#PostWhitelistsDelete) | **Post** /whitelists/delete | Remove email from allowlist
 [**PostWhitelistsList**](WhitelistsApi.md#PostWhitelistsList) | **Post** /whitelists/list | List allowlisted emails
-
 
 # **PostWhitelistsAdd**
 > InlineResponse200 PostWhitelistsAdd(ctx, body)
@@ -20,7 +19,7 @@ Adds an email to your email rejection allowlist. If the address is currently on 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body91**](Body91.md)|  | 
+  **body** | [**WhitelistsAddBody**](WhitelistsAddBody.md)|  | 
 
 ### Return type
 
@@ -48,7 +47,7 @@ Removes an email address from the allowlist.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body93**](Body93.md)|  | 
+  **body** | [**WhitelistsDeleteBody**](WhitelistsDeleteBody.md)|  | 
 
 ### Return type
 
@@ -76,7 +75,7 @@ Retrieves your email rejection allowlist. You can provide an email address or se
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body92**](Body92.md)|  | 
+  **body** | [**WhitelistsListBody**](WhitelistsListBody.md)|  | 
 
 ### Return type
 

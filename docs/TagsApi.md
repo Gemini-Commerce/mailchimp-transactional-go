@@ -1,4 +1,4 @@
-# \TagsApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**PostTagsInfo**](TagsApi.md#PostTagsInfo) | **Post** /tags/info | Get tag info
 [**PostTagsList**](TagsApi.md#PostTagsList) | **Post** /tags/list | List tags
 [**PostTagsTimeSeries**](TagsApi.md#PostTagsTimeSeries) | **Post** /tags/time-series | View tag history
-
 
 # **PostTagsAllTimeSeries**
 > []InlineResponse20031 PostTagsAllTimeSeries(ctx, body)
@@ -22,7 +21,7 @@ Return the recent history (hourly stats for the last 30 days) for all tags.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body67**](Body67.md)|  | 
+  **body** | [**TagsAlltimeseriesBody**](TagsAlltimeseriesBody.md)|  | 
 
 ### Return type
 
@@ -50,7 +49,7 @@ Deletes a tag permanently. Deleting a tag removes the tag from any messages that
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body64**](Body64.md)|  | 
+  **body** | [**TagsDeleteBody**](TagsDeleteBody.md)|  | 
 
 ### Return type
 
@@ -78,7 +77,7 @@ Return more detailed information about a single tag, including aggregates of rec
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body65**](Body65.md)|  | 
+  **body** | [**TagsInfoBody**](TagsInfoBody.md)|  | 
 
 ### Return type
 
@@ -106,7 +105,7 @@ Return all of the user-defined tag information.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body63**](Body63.md)|  | 
+  **body** | [**TagsListBody**](TagsListBody.md)|  | 
 
 ### Return type
 
@@ -134,7 +133,7 @@ Return the recent history (hourly stats for the last 30 days) for a tag.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body66**](Body66.md)|  | 
+  **body** | [**TagsTimeseriesBody**](TagsTimeseriesBody.md)|  | 
 
 ### Return type
 

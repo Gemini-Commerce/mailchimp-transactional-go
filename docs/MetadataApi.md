@@ -1,4 +1,4 @@
-# \MetadataApi
+# {{classname}}
 
 All URIs are relative to *https://mandrillapp.com/api/1.0*
 
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**PostMetadataDelete**](MetadataApi.md#PostMetadataDelete) | **Post** /metadata/delete | Delete metadata field
 [**PostMetadataList**](MetadataApi.md#PostMetadataList) | **Post** /metadata/list | List metadata fields
 [**PostMetadataUpdate**](MetadataApi.md#PostMetadataUpdate) | **Post** /metadata/update | Update metadata field
-
 
 # **PostMetadataAdd**
 > InlineResponse20037 PostMetadataAdd(ctx, body)
@@ -21,7 +20,7 @@ Add a new custom metadata field to be indexed for the account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body43**](Body43.md)|  | 
+  **body** | [**MetadataAddBody**](MetadataAddBody.md)|  | 
 
 ### Return type
 
@@ -49,7 +48,7 @@ Delete an existing custom metadata field. Deletion isn't instataneous, and /meta
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body45**](Body45.md)|  | 
+  **body** | [**MetadataDeleteBody**](MetadataDeleteBody.md)|  | 
 
 ### Return type
 
@@ -77,7 +76,7 @@ Get the list of custom metadata fields indexed for the account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body42**](Body42.md)|  | 
+  **body** | [**MetadataListBody**](MetadataListBody.md)|  | 
 
 ### Return type
 
@@ -105,7 +104,7 @@ Update an existing custom metadata field.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body44**](Body44.md)|  | 
+  **body** | [**MetadataUpdateBody**](MetadataUpdateBody.md)|  | 
 
 ### Return type
 
